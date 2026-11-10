@@ -1,24 +1,30 @@
-# Junayed — portfolio website
+# Junayed — portfolio
 
-A hand-built portfolio site: plain HTML, CSS and JavaScript, no build step.
+Media buyer and growth specialist portfolio. Plain HTML, CSS and JavaScript, no build step.
 
-- `index.html` — all page content
-- `styles.css` — design tokens (colors, type) at the top, then layout
-- `script.js` — the resizable hero demo and expandable project rows
+## Editing content
+Everything you see on the page comes from **`content.js`**:
+- `PROFILE` — name, role, photo, intro, mission, headline numbers, email, links
+- `CASES` — case studies: brand, category, platforms, summary, metrics, ad creatives
+- `CLIENTS` — client names and logos
 
-## Before publishing
-- Replace the four sample projects in `index.html` (Selected work) with real ones
-- Replace `hello@example.com` with your real email
-- Fill in the LinkedIn and Dribbble links
+Return on spend in the header is calculated from `spend` and `revenue` automatically.
+
+## Adding files
+- Your photo: `assets/photo.jpg`
+- Ad creatives: `assets/cases/` — vertical 9:16 images (`.jpg`, `.png`, `.webp`) or videos (`.mp4`, keep under ~5 MB each)
+- Client logos: `assets/clients/` — transparent `.svg` or `.png`
+
+Then reference them in `content.js`, e.g.
+```js
+creatives: [{ type: "video", src: "assets/cases/brand-ad-1.mp4" }, { type: "image", src: "assets/cases/brand-ad-2.jpg" }]
+{ name: "Brand", logo: "assets/clients/brand.svg" }
+```
 
 ## Preview locally
 ```bash
 python3 -m http.server 8000
 ```
-Then open http://localhost:8000
 
-## Publish free with GitHub Pages
-Repository Settings → Pages → Source: "Deploy from a branch" → Branch: `main`, folder `/ (root)`.
-
-## Claude skills
-`.claude/skills/` contains `frontend-design` and `webapp-testing`, loaded automatically in Claude Code sessions on this repo.
+## Publish with GitHub Pages
+Settings → Pages → Deploy from a branch → `main`, `/ (root)`.
