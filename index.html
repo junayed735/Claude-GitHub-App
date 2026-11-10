@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junayed, web designer and developer</title>
+  <meta name="description" content="Junayed designs and builds websites that hold up at every screen size.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317251E'/%3E%3Crect x='20' y='9' width='6' height='14' rx='2' fill='%23F0AE2E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">Junayed</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: the one bold moment — a live, resizable website -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1 class="hero-title">I design and build websites that hold up at every width.</h1>
+        <p class="hero-lede">Phone, laptop, the 4K monitor in the meeting room. Drag the yellow edge and watch this little site rearrange itself. That’s most of my job, done properly.</p>
+        <a class="button" href="#contact">Start a project</a>
+      </div>
+
+      <div class="stage" aria-label="Responsive layout demo">
+        <div class="frame" id="frame" style="--w: 100%">
+          <div class="mini">
+            <div class="mini-nav">
+              <span class="mini-logo">Nodi Tea</span>
+              <span class="mini-links"><i></i><i></i><i></i></span>
+              <span class="mini-burger" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+            <div class="mini-hero">
+              <p class="mini-h">Single-estate tea from Sylhet</p>
+              <span class="mini-btn">Shop now</span>
+            </div>
+            <div class="mini-grid">
+              <div class="mini-card c1"></div>
+              <div class="mini-card c2"></div>
+              <div class="mini-card c3"></div>
+            </div>
+          </div>
+          <div class="handle" id="handle" role="slider" tabindex="0"
+               aria-label="Demo width" aria-valuemin="280" aria-valuemax="900" aria-valuenow="900"
+               aria-valuetext="900 pixels wide">
+            <span></span>
+          </div>
+        </div>
+        <p class="readout" aria-live="polite"><span id="px">—</span> px wide, <span id="device">desktop layout</span></p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <h2 id="work-h">Selected work</h2>
+      <!-- Sample projects: replace with your real work before publishing -->
+      <ul class="projects">
+        <li class="project">
+          <button class="project-row" aria-expanded="false" aria-controls="p1">
+            <span class="p-name">Nodi Tea</span>
+            <span class="p-kind">Online shop</span>
+            <span class="p-year">2026</span>
+          </button>
+          <div class="project-detail" id="p1" hidden>
+            <p>A tea estate wanted to sell directly instead of through wholesalers. I designed and built a small shop with a checkout that works on slow mobile connections, since most of their buyers order from phones.</p>
+            <dl>
+              <div><dt>Role</dt><dd>Design, front-end, Shopify theme</dd></div>
+              <div><dt>Result</dt><dd>Mobile orders up 60% in the first three months</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="project">
+          <button class="project-row" aria-expanded="false" aria-controls="p2">
+            <span class="p-name">Shohoz Clinic</span>
+            <span class="p-kind">Booking system</span>
+            <span class="p-year">2025</span>
+          </button>
+          <div class="project-detail" id="p2" hidden>
+            <p>Patients were booking appointments by phone, and the front desk was overwhelmed. I built an online booking flow in Bangla and English, with SMS reminders, that staff manage from one screen.</p>
+            <dl>
+              <div><dt>Role</dt><dd>UX, React front-end, Node.js API</dd></div>
+              <div><dt>Result</dt><dd>Phone bookings down by half; fewer missed appointments</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="project">
+          <button class="project-row" aria-expanded="false" aria-controls="p3">
+            <span class="p-name">Lalbagh Studio</span>
+            <span class="p-kind">Architecture portfolio</span>
+            <span class="p-year">2024</span>
+          </button>
+          <div class="project-detail" id="p3" hidden>
+            <p>An architecture firm needed its photography to do the talking. Large images, quiet typography, and pages that load fast even with hundreds of photos.</p>
+            <dl>
+              <div><dt>Role</dt><dd>Art direction, design, Next.js</dd></div>
+              <div><dt>Result</dt><dd>Page load under 1.5 seconds on 4G</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="project">
+          <button class="project-row" aria-expanded="false" aria-controls="p4">
+            <span class="p-name">Pathshala</span>
+            <span class="p-kind">Learning platform</span>
+            <span class="p-year">2023</span>
+          </button>
+          <div class="project-detail" id="p4" hidden>
+            <p>A course platform for school students, built to work on cheap Android phones. Lessons download for offline use, and the interface is readable for young eyes.</p>
+            <dl>
+              <div><dt>Role</dt><dd>Product design, front-end, accessibility</dd></div>
+              <div><dt>Result</dt><dd>12,000 students in the first year</dd></div>
+            </dl>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROCESS: a real sequence, so numbering is earned -->
+    <section class="section" id="process" aria-labelledby="process-h">
+      <h2 id="process-h">How a project goes</h2>
+      <ol class="steps">
+        <li>
+          <h3>We talk</h3>
+          <p>A call about what your site needs to do, who uses it, and what isn’t working now. You get a written plan and a fixed price within three days.</p>
+        </li>
+        <li>
+          <h3>I design</h3>
+          <p>Designs for phone and desktop, with your real content. You see them in a browser, not a PDF, and we revise until they’re right.</p>
+        </li>
+        <li>
+          <h3>I build</h3>
+          <p>Clean, fast code, tested on real devices. You get a preview link to check progress whenever you like.</p>
+        </li>
+        <li>
+          <h3>We launch</h3>
+          <p>I put it live, show your team how to edit it, and fix anything that comes up in the first month at no charge.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about-body">
+        <p class="about-lead">I’m Junayed, a designer and developer based in Bangladesh. For more than ten years I’ve made websites for shops, clinics, studios and schools.</p>
+        <p>I do both halves of the work, design and code, so nothing gets lost between a pretty mockup and the thing that actually ships. I care about the details most people skip: how a page feels on a cheap phone, whether a screen reader can follow it, how fast it loads on a bad connection.</p>
+        <div class="skills">
+          <div>
+            <h3>Design</h3>
+            <p>Figma, design systems, typography, accessibility, UX research</p>
+          </div>
+          <div>
+            <h3>Development</h3>
+            <p>HTML, CSS, JavaScript, React, Next.js, Node.js, WordPress, Shopify</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Have a website in mind?</h2>
+      <p>Tell me what you’re building. I reply within one working day.</p>
+      <!-- Replace with your real email address -->
+      <a class="contact-email" href="mailto:hello@example.com">hello@example.com</a>
+      <ul class="social">
+        <li><a href="https://github.com/junayed735">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Dribbble</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Junayed. Designed and built by hand.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
