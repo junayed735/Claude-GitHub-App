@@ -145,7 +145,7 @@ function hero(home) {
       <p class="hero-intro">${esc(home.intro)}</p>
       <div class="hero-ctas">${cta(home.ctaPrimary, "btn-primary")}${cta(home.ctaSecondary, "btn-ghost")}</div>
     </div>
-    <figure class="hero-figure">${photo}</figure>
+    <figure class="hero-figure${home.heroImageShape === "circle" ? " shape-circle" : ""}">${photo}</figure>
   </div>
   ${metrics.length ? `<div class="wrap"><dl class="metrics m${metrics.length}">${metricHtml}</dl></div>` : ""}
 </section>`;

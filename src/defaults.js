@@ -10,6 +10,7 @@ const settings = {
     intro: "I help B2B and B2C brands accelerate growth through strategic media buying, performance marketing, and data-driven growth solutions.",
     heroImage: "",
     heroImageAlt: "Portrait of Junayed",
+    heroImageShape: "portrait",
     ctaPrimary: { label: "Explore my work", href: "#work" },
     ctaSecondary: { label: "Let's connect", href: "#contact" },
     metrics: [

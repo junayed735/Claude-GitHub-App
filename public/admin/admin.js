@@ -77,6 +77,7 @@
           { key: "headline", label: "Headline", type: "text", required: true },
           { key: "intro", label: "Introduction", type: "textarea", rows: 3 },
           { key: "heroImage", label: "Hero photo", type: "image", hint: "Portrait (4:5) works best. Your face should sit in the upper third.", cover: true },
+          { key: "heroImageShape", label: "Photo frame", type: "select", options: [["portrait", "Portrait (4:5 rounded rectangle)"], ["circle", "Circle (for round cut-out photos)"]] },
           { key: "heroImageAlt", label: "Photo description (for screen readers)", type: "text" },
           { key: "ctaPrimary", label: "Main button", type: "group", fields: [{ key: "label", label: "Text", type: "text" }, { key: "href", label: "Link", type: "text", hint: "#work, #contact, or a full URL" }] },
           { key: "ctaSecondary", label: "Second button", type: "group", fields: [{ key: "label", label: "Text", type: "text" }, { key: "href", label: "Link", type: "text" }] },
